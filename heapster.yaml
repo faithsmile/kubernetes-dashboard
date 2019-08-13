@@ -20,7 +20,8 @@ spec:
       serviceAccountName: heapster
       containers:
       - name: heapster
-        image: registry.cn-shenzhen.aliyuncs.com/bingk8s/heapster-amd64:v1.5.4
+        # the following images is build based on v1.5.4
+        image: registry.cn-shenzhen.aliyuncs.com/paulli/heapster-amd64:latest
         imagePullPolicy: IfNotPresent
         command:
         - /heapster
